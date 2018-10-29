@@ -9,7 +9,7 @@
 * **Step 2.** **`DONE`** Understanding TCP with ECN
 * **Step 3.** **`DONE`** Understanding ABE
 * **Step 4.** **`DONE`** Differentiating between TCP with ECN and ABE
-* **Step 5.** **`IN PROGRESS`** Making state diagrams for TCP with ECN and for ABE
+* **Step 5.** **`DONE`** Making state diagrams for TCP with ECN and for ABE
 * **Step 6.** **`IN PROGRESS`** Understanding ns3 code for ECN
 * **Step 7.** **`IN PROGRESS`** Adding the features of ABE to ns3 ECN implementation
 * **Step 8.** **`IN PROGRESS`** Comparing the performance of TCP New Reno with ABE and with normal ECN
