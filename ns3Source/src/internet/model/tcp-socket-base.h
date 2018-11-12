@@ -1236,6 +1236,7 @@ protected:
 
   // Options
   bool    m_sackEnabled       {true}; //!< RFC SACK option enabled
+  
   bool    m_winScalingEnabled {true}; //!< Window Scale option enabled (RFC 7323)
   uint8_t m_rcvWindShift      {0};    //!< Window shift to apply to outgoing segments
   uint8_t m_sndWindShift      {0};    //!< Window shift to apply to incoming segments
@@ -1248,7 +1249,6 @@ protected:
   SequenceNumber32       m_recover    {0};   //!< Previous highest Tx seqnum for fast recovery (set it to initial seq number)
   uint32_t               m_retxThresh {3};   //!< Fast Retransmit threshold
   bool                   m_limitedTx  {true}; //!< perform limited transmit
-
   // Transmission Control Block
   Ptr<TcpSocketState>    m_tcb;               //!< Congestion control information
   Ptr<TcpCongestionOps>  m_congestionControl; //!< Congestion control
@@ -1269,9 +1269,12 @@ protected:
 
   // Parameters related to Explicit Congestion Notification
   EcnMode_t                     m_ecnMode    {EcnMode_t::NoEcn};      //!< Socket ECN capability
+
+   bool    m_abeMode           {false}; 
   TracedValue<SequenceNumber32> m_ecnEchoSeq {0};      //!< Sequence number of the last received ECN Echo
   TracedValue<SequenceNumber32> m_ecnCESeq   {0};      //!< Sequence number of the last received Congestion Experienced
   TracedValue<SequenceNumber32> m_ecnCWRSeq  {0};      //!< Sequence number of the last sent CWR
+
 };
 
 /**
