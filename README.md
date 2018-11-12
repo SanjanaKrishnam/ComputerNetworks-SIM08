@@ -25,7 +25,7 @@ else if (ecn_notification):
 * **Step 7.** **`DONE`** Adding the features of ABE to ns3 ECN implementation
 * **Step 8.** **`DONE`** Creating a toplogy to test ABE
 * **Step 9.** **`DONE`** Using adaptive red tests with ABE on
-* **Step 10.** **`IN PROGRESS`** Comparing the performance of TCP New Reno with ABE and with normal ECN
+* **Step 10.** **`DONE`** Comparing the performance of TCP New Reno with ABE and with normal ECN
 
 ## Problems: <br/>
 
@@ -35,4 +35,10 @@ else if (ecn_notification):
 * Adding AbeMode attribute in incorrect position
 * Reducing cwnd by a factor of beta, ns3 uses integer type for result
   can not use real data type values
+
+## Further Work: <br/>
+
+* Testing ABE with different TCP's to determine its efficiency.
+* Using different queuing algorithms to see the impact on performance with ABE
+* Measuring Latency under different conditions with ABE, to determine optimal beta values.
 
